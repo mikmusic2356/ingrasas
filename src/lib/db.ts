@@ -1,7 +1,19 @@
 import { createClient } from "@libsql/client";
 
-const url = process.env.TURSO_DATABASE_URL || "file:local.db";
+let url = process.env.TURSO_DATABASE_URL || "file:local.db";
 const authToken = process.env.TURSO_AUTH_TOKEN || "";
+
+// Verify the URL starts with a valid scheme to prevent build-time crashes with masked tokens (like '****')
+const isValidUrl = url.startsWith("libsql://") || 
+                   url.startsWith("https://") || 
+                   url.startsWith("http://") || 
+                   url.startsWith("file:") || 
+                   url.startsWith("wss://") || 
+                   url.startsWith("ws://");
+
+if (!isValidUrl) {
+  url = "file:local.db";
+}
 
 export const db = createClient({
   url,
