@@ -40,10 +40,14 @@ export default function ContactModal() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      return res.ok;
-    } catch (err) {
+      if (res.ok) {
+        return { success: true };
+      }
+      const errData = await res.json();
+      return { success: false, error: errData.details || errData.error || "Error en el servidor" };
+    } catch (err: any) {
       console.error("Error submitting to API:", err);
-      return false;
+      return { success: false, error: err.message };
     }
   };
 
@@ -81,14 +85,14 @@ export default function ContactModal() {
           const cantidad = (document.getElementById("modal-cantidad") as HTMLInputElement)?.value;
           const mensaje = (document.getElementById("modal-mensaje") as HTMLTextAreaElement)?.value;
 
-          const saved = await saveToDatabase({ nombre, empresa, email, telefono, ciudad, interes, cantidad, mensaje });
+          const result = await saveToDatabase({ nombre, empresa, email, telefono, ciudad, interes, cantidad, mensaje });
           setIsSubmitting(false);
 
-          if (saved) {
+          if (result.success) {
             alert("Solicitud guardada con éxito. Un asesor se pondrá en contacto por correo.");
             handleClose();
           } else {
-            alert("Hubo un error al guardar la cotización. Por favor intente de nuevo.");
+            alert(`Hubo un error al guardar la cotización: ${result.error}`);
           }
         }}>
           <div className="form-group">

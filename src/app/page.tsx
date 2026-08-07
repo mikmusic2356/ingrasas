@@ -9,7 +9,7 @@ export default function Home() {
       {/* 1. Tall Hero Banner (Fiel a la captura subida) */}
       <section className="home-hero-banner">
         <Image 
-          src="/images/hero-bg.jpg" 
+          src="/images/quienes_somos_imagen.jpeg" 
           alt="Ingrasas Planta Industrial Sostenible" 
           fill
           priority
@@ -530,7 +530,7 @@ export default function Home() {
         {/* Large industrial banner at the bottom of the stats section */}
         <div className="infra-banner-image-wrapper">
           <Image 
-            src="/images/hero-bg.jpg" 
+            src="/images/quienes_somos_imagen.jpeg" 
             alt="Infraestructura Industrial Tanques" 
             fill
             className="card-bg-image"
