@@ -4,8 +4,8 @@ let clientInstance: any = null;
 
 function getClient() {
   if (!clientInstance) {
-    let url = process.env.TURSO_DATABASE_URL || "file:local.db";
-    const authToken = process.env.TURSO_AUTH_TOKEN || "";
+    let url = process.env['TURSO_DATABASE_URL'] || "file:local.db";
+    const authToken = process.env['TURSO_AUTH_TOKEN'] || "";
 
     // Verify the URL starts with a valid scheme to prevent build-time crashes with masked tokens (like '****')
     const isValidUrl = url.startsWith("libsql://") || 
