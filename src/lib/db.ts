@@ -4,15 +4,13 @@ let clientInstance: any = null;
 
 function getClient() {
   if (!clientInstance) {
-    let url = process.env['TURSO_DATABASE_URL'];
-    const authToken = process.env['TURSO_AUTH_TOKEN'] || "";
+    const url = process.env['TURSO_DATABASE_URL'];
+    const authToken = process.env['TURSO_AUTH_TOKEN'];
 
     if (!url) {
-      // Throw a friendly error only at runtime in production when the variable is missing
-      throw new Error("TURSO_DATABASE_URL no está configurada en Netlify. Por favor, agrégala en Netlify (Site configuration -> Environment variables) y asegúrate de marcar todos los scopes (Builds, Functions, Local).");
+      throw new Error("TURSO_DATABASE_URL no está definida. Por favor, configúrala en Netlify (Site configuration -> Environment variables) y activa todos los Scopes.");
     }
 
-    // Verify the URL starts with a valid scheme to prevent build-time crashes with masked tokens (like '****')
     const isValidUrl = url.startsWith("libsql://") || 
                        url.startsWith("https://") || 
                        url.startsWith("http://") || 
@@ -21,7 +19,7 @@ function getClient() {
                        url.startsWith("ws://");
 
     if (!isValidUrl) {
-      url = "file:local.db";
+      throw new Error(`TURSO_DATABASE_URL tiene un formato inválido: "${url.substring(0, 10)}...". Debe comenzar con libsql:// o https://`);
     }
 
     clientInstance = createClient({
