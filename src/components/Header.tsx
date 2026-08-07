@@ -31,7 +31,7 @@ export default function Header() {
         <div className="logo-container">
           <Link href="/" className="logo-link" onClick={closeMenu} style={{ display: "flex", alignItems: "center" }}>
             <Image 
-              src="/images/LOGO DECIDIDO.jpeg" 
+              src="/images/logo_decidido.jpeg" 
               alt="Ingrasas Logo" 
               width={220} 
               height={67} 

@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="footer-logo-col">
             <Link href="/" className="logo-link" style={{ marginBottom: "1rem", display: "inline-flex", alignItems: "center" }}>
               <Image 
-                src="/images/LOGO DECIDIDO.jpeg" 
+                src="/images/logo_decidido.jpeg" 
                 alt="Ingrasas Logo" 
                 width={220} 
                 height={67} 

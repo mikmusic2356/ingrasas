@@ -1,23 +1,42 @@
 import { createClient } from "@libsql/client";
 
-let url = process.env.TURSO_DATABASE_URL || "file:local.db";
-const authToken = process.env.TURSO_AUTH_TOKEN || "";
+let clientInstance: any = null;
 
-// Verify the URL starts with a valid scheme to prevent build-time crashes with masked tokens (like '****')
-const isValidUrl = url.startsWith("libsql://") || 
-                   url.startsWith("https://") || 
-                   url.startsWith("http://") || 
-                   url.startsWith("file:") || 
-                   url.startsWith("wss://") || 
-                   url.startsWith("ws://");
+function getClient() {
+  if (!clientInstance) {
+    let url = process.env.TURSO_DATABASE_URL || "file:local.db";
+    const authToken = process.env.TURSO_AUTH_TOKEN || "";
 
-if (!isValidUrl) {
-  url = "file:local.db";
+    // Verify the URL starts with a valid scheme to prevent build-time crashes with masked tokens (like '****')
+    const isValidUrl = url.startsWith("libsql://") || 
+                       url.startsWith("https://") || 
+                       url.startsWith("http://") || 
+                       url.startsWith("file:") || 
+                       url.startsWith("wss://") || 
+                       url.startsWith("ws://");
+
+    if (!isValidUrl) {
+      url = "file:local.db";
+    }
+
+    clientInstance = createClient({
+      url,
+      authToken,
+    });
+  }
+  return clientInstance;
 }
 
-export const db = createClient({
-  url,
-  authToken,
+// Proxy to dynamically delegate all operations to the live client instance at runtime
+export const db = new Proxy({} as any, {
+  get(target, prop) {
+    const client = getClient();
+    const value = client[prop];
+    if (typeof value === "function") {
+      return value.bind(client);
+    }
+    return value;
+  }
 });
 
 // Initialize database table
