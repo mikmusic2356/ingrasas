@@ -121,7 +121,7 @@ export default function Jaboneria() {
       </section>
 
       {/* 4. Parallax Banner Sostenibilidad */}
-      <section className="industry-sustainability-banner" style={{ backgroundImage: "linear-gradient(rgba(0, 34, 68, 0.5), rgba(0, 34, 68, 0.5)), url('/images/hero-bg.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}>
+      <section className="industry-sustainability-banner" style={{ backgroundImage: "linear-gradient(rgba(0, 34, 68, 0.5), rgba(0, 34, 68, 0.5)), url('/images/hero/aceite_hero.jpeg')", backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed" }}>
         <div className="sustainability-banner-content">
           <h2>SOSTENIBILIDAD</h2>
           <p>

@@ -5,19 +5,20 @@ export default function Nosotros() {
   return (
     <main>
       <div className="page-header-spacer"></div>
-      <section className="page-hero">
+      <section className="page-hero" style={{ position: "relative", overflow: "hidden", height: "420px", display: "flex", alignItems: "center" }}>
         <Image 
-          src="/images/LOGO DECIDIDO.jpeg" 
-          alt="INGRASAS Logo" 
+          src="/images/hero/Industrial_workers_banner_cover_202608151541.jpeg" 
+          alt="Trabajadores Industriales Ingrasas" 
           fill
           priority
-          className="hero-bg"
-          style={{ objectFit: "contain", objectPosition: "center", opacity: 0.25 }}
+          style={{ objectFit: "cover", objectPosition: "center" }}
         />
-        <div className="hero-overlay"></div>
-        <div className="container" style={{ position: "relative", zIndex: 10 }}>
-          <h1 className="page-title">Nuestra Empresa</h1>
-          <p className="hero-desc" style={{ margin: "0 auto", textAlign: "center" }}>
+        <div className="nosotros-banner-overlay"></div>
+        <div className="container" style={{ position: "relative", zIndex: 10, textAlign: "center", color: "#ffffff" }}>
+          <h1 className="page-title" style={{ fontFamily: "var(--font-primary)", fontSize: "3.5rem", fontWeight: "800", color: "#ffffff", letterSpacing: "0.05em", textShadow: "0 4px 10px rgba(0, 0, 0, 0.3)", margin: 0 }}>
+            QUIÉNES SOMOS
+          </h1>
+          <p className="hero-desc" style={{ margin: "1rem auto 0 auto", textAlign: "center", color: "#cbd5e1", fontSize: "1.1rem" }}>
             Impulsamos la industria con materias primas de origen animal y soluciones sostenibles.
           </p>
         </div>
