@@ -3339,38 +3339,41 @@ a {
 }
 
 .form-tabs-selector {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   background-color: #f1f5f9;
   border-bottom: 1px solid #e2e8f0;
-  overflow-x: auto;
+  width: 100%;
 }
 
 .tab-btn {
-  flex: 1;
-  min-width: 130px;
   background-color: transparent;
   border: none;
   padding: 1.15rem 1rem;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--color-text-medium);
   font-family: var(--font-secondary);
   text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition-smooth);
-  border-bottom: 2px solid transparent;
-  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .tab-btn:hover {
-  background-color: rgba(0,0,0,0.02);
+  background-color: rgba(0,0,0,0.03);
   color: var(--color-blue-dark);
 }
 
 .tab-btn.active {
   background-color: #ffffff;
   color: var(--color-orange-primary);
-  border-bottom-color: var(--color-orange-primary);
+  border-bottom: 3px solid var(--color-orange-primary);
 }
 
 .contacto-smart-form {
