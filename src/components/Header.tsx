@@ -33,8 +33,8 @@ export default function Header() {
             <Image 
               src="/images/logo_decidido.jpeg" 
               alt="Ingrasas Logo" 
-              width={220} 
-              height={67} 
+              width={260} 
+              height={79} 
               style={{ objectFit: "contain" }}
               priority
             />

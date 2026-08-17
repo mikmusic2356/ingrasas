@@ -12,8 +12,8 @@ export default function Footer() {
               <Image 
                 src="/images/logo_invertido.jpeg" 
                 alt="Ingrasas Logo" 
-                width={220} 
-                height={67} 
+                width={330} 
+                height={100} 
                 style={{ objectFit: "contain", filter: "brightness(0.95)" }}
               />
             </Link>

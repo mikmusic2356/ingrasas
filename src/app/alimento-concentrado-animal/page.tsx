@@ -9,7 +9,7 @@ export default function AlimentoConcentradoAnimal() {
       {/* 1. Hero Banner */}
       <section className="industry-hero">
         <Image 
-          src="/images/hero/hero nutricion animal.jpeg" 
+          src="/images/hero/gatoperro.jpeg" 
           alt="Alimento concentrado animal" 
           fill
           priority

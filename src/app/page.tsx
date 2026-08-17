@@ -91,8 +91,11 @@ export default function Home() {
             <div className="hero-features-grid">
               <div className="hero-feature-item">
                 <div className="hero-feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                    <path d="M21 3v5h-5" />
+                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                    <path d="M3 21v-5h5" />
                   </svg>
                 </div>
                 <div className="hero-feature-text">
@@ -102,10 +105,10 @@ export default function Home() {
               </div>
               <div className="hero-feature-item">
                 <div className="hero-feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                    <polyline points="2 17 12 22 22 17" />
-                    <polyline points="2 12 12 17 22 12" />
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 6z" />
+                    <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" />
                   </svg>
                 </div>
                 <div className="hero-feature-text">
@@ -115,9 +118,10 @@ export default function Home() {
               </div>
               <div className="hero-feature-item">
                 <div className="hero-feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="m9 12 2 2 4-4" />
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                    <line x1="12" y1="22.08" x2="12" y2="12" />
                   </svg>
                 </div>
                 <div className="hero-feature-text">
@@ -127,11 +131,12 @@ export default function Home() {
               </div>
               <div className="hero-feature-item">
                 <div className="hero-feature-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="18" cy="5" r="3" />
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="19" r="3" />
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
                   </svg>
                 </div>
                 <div className="hero-feature-text">
@@ -273,7 +278,7 @@ export default function Home() {
               </div>
               <div className="hacemos-card-image-wrapper">
                 <Image 
-                  src="/images/que-es-la-economia-circular.jpg" 
+                  src="/images/recuperamos.jfif" 
                   alt="Recuperación de grasa animal"
                   fill
                   className="hacemos-img"
@@ -296,7 +301,7 @@ export default function Home() {
               </div>
               <div className="hacemos-card-image-wrapper">
                 <Image 
-                  src="/images/circular-economy.jpg" 
+                  src="/images/valorizamos.jfif" 
                   alt="Economía circular valorización"
                   fill
                   className="hacemos-img"
@@ -317,7 +322,7 @@ export default function Home() {
               </div>
               <div className="hacemos-card-image-wrapper">
                 <Image 
-                  src="/images/Golden_chicken_oil_in_beaker_202608032308.jpeg" 
+                  src="/images/suministramos.jfif" 
                   alt="Suministro de aceites industriales"
                   fill
                   className="hacemos-img"
@@ -809,7 +814,7 @@ export default function Home() {
         {/* Banner a lo ancho y responsivo */}
         <div className="nosotros-banner-wide">
           <Image 
-            src="/images/hero/Industrial_workers_banner_cover_202608151541.jpeg" 
+            src="/images/hero/quienes somos.jpeg" 
             alt="Trabajadores Industriales Ingrasas" 
             fill
             priority
