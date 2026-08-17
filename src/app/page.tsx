@@ -63,7 +63,7 @@ export default function Home() {
         <div className="hero-content-container container">
           <div className="hero-content-main">
             <h1 className="hero-title-main">
-              MATERIAS PRIMAS DE ORIGEN ANIMAL Y SOLUCIONES PARA LA<br />INDUSTRIA
+              MATERIAS PRIMAS DE ORIGEN ANIMAL Y SOLUCIONES PARA LA INDUSTRIA
             </h1>
             <p className="hero-subtitle-main">
               Suministramos materias primas de origen animal para diferentes aplicaciones industriales y desarrollamos soluciones especializadas para la gestión y valorización de materiales grasos.

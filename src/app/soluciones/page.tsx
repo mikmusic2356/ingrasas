@@ -14,61 +14,81 @@ export default function Soluciones() {
           fill
           priority
           className="hero-bg"
-          style={{ opacity: 0.2 }}
+          style={{ opacity: 0.2, objectFit: "cover" }}
         />
         <div className="hero-overlay"></div>
         <div className="container" style={{ position: "relative", zIndex: 10 }}>
           <h1 className="page-title">Soluciones</h1>
-          <p className="hero-desc" style={{ margin: "0 auto", textAlign: "center" }}>
+          <p className="soluciones-hero-subtitle">
             Soluciones Especializadas para la Industria Avícola.
           </p>
         </div>
       </section>
 
       <section className="page-content-wrapper section-padding" style={{ paddingBottom: "2rem" }}>
-        <div className="container" style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "4rem" }}>
-          <div>
-            <h2 style={{ fontSize: "2.2rem", marginBottom: "1.5rem", textTransform: "uppercase", fontFamily: "var(--font-primary)" }}>
-              Servicios Especializados en Rendering y Gestión de Grasas
-            </h2>
-            <p style={{ color: "var(--color-gray-dark)", fontSize: "1.15rem", lineHeight: "1.8", marginBottom: "2.5rem" }}>
-              Ofrecemos soluciones especializadas para la industria avícola mediante un sistema integral para la recuperación, gestión y valorización de materiales grasos. Nuestro modelo de trabajo está diseñado para apoyar a plantas de beneficio y empresas del sector en la optimización del manejo de estos materiales, favoreciendo su aprovechamiento responsable y contribuyendo a una operación más eficiente y sostenible.
-            </p>
-
-            {/* Interactive Services Cards */}
-            <div className="soluciones-servicios-list">
-              <div className="soluciones-servicio-card">
-                <h3>Recuperación, Gestión y Valorización</h3>
-                <p>
-                  Implementamos un sistema especializado para la recuperación, gestión y valorización de materiales grasos de origen avícola, permitiendo su incorporación como materias primas para diferentes aplicaciones industriales. Nuestro servicio busca optimizar el manejo de estos materiales desde su generación hasta su aprovechamiento, aportando valor tanto para nuestros clientes como para la cadena productiva.
-                </p>
-              </div>
-
-              <div className="soluciones-servicio-card">
-                <h3>Gestión Ambiental</h3>
-                <p>
-                  Nuestro modelo contribuye a reducir la carga contaminante generada por los materiales grasos sobre los sistemas de tratamiento de aguas residuales (PTAR), favoreciendo una operación más eficiente y apoyando los objetivos ambientales de nuestros aliados.
-                </p>
-              </div>
-
-              <div className="soluciones-servicio-card">
-                <h3>Acompañamiento Especializado</h3>
-                <p>
-                  Brindamos acompañamiento técnico y comercial durante todo el proceso de implementación de nuestras soluciones, trabajando de la mano con cada cliente para adaptar nuestro modelo a las necesidades operativas de su empresa y garantizar una gestión eficiente de los materiales grasos.
-                </p>
-              </div>
+        <div className="container">
+          {/* Intro Row */}
+          <div className="soluciones-intro-grid" style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "4rem", marginBottom: "4rem", alignItems: "center" }}>
+            <div>
+              <h2 style={{ fontSize: "50px", marginBottom: "1.5rem", textTransform: "uppercase", fontFamily: "var(--font-primary)", lineHeight: "1.2" }}>
+                Servicios Especializados en Rendering y Gestión de Grasas
+              </h2>
+              <p style={{ color: "var(--color-gray-dark)", fontSize: "1.15rem", lineHeight: "1.8", marginBottom: "0" }}>
+                Ofrecemos soluciones especializadas para la industria avícola mediante un sistema integral para la recuperación, gestión y valorización de materiales grasos. Nuestro modelo de trabajo está diseñado para apoyar a plantas de beneficio y empresas del sector en la optimización del manejo de estos materiales, favoreciendo su aprovechamiento responsable y contribuyendo a una operación más eficiente y sostenible.
+              </p>
+            </div>
+            
+            <div className="soluciones-intro-img-col" style={{ position: "relative", width: "100%", height: "300px", borderRadius: "12px", overflow: "hidden", border: "1px solid var(--color-divider)", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
+               <Image 
+                 src="/images/hero/soluciones imagens.jpeg" 
+                 alt="Soluciones Ingrasas" 
+                 fill
+                 style={{ objectFit: "cover" }}
+               />
             </div>
           </div>
 
-          {/* Right Column: Decorative Process Image */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-            <div style={{ position: "relative", width: "100%", height: "100%", minHeight: "450px", borderRadius: "12px", overflow: "hidden", border: "1px solid var(--color-divider)", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
-              <Image 
-                src="/images/soluciones.jpeg" 
-                alt="Soluciones Ingrasas" 
-                fill
-                style={{ objectFit: "cover" }}
-              />
+          {/* Vertical Services Cards Grid */}
+          <div className="soluciones-servicios-vertical-grid">
+            {/* Card 1 */}
+            <div className="soluciones-vertical-card">
+              <div className="soluciones-card-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4" />
+                </svg>
+              </div>
+              <h3>Recuperación, Gestión y Valorización</h3>
+              <p>
+                Implementamos un sistema especializado para la recuperación, gestión y valorización de materiales grasos de origen avícola, permitiendo su incorporación como materias primas para diferentes aplicaciones industriales. Nuestro servicio busca optimizar el manejo de estos materiales desde su generación hasta su aprovechamiento, aportando valor tanto para nuestros clientes como para la cadena productiva.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="soluciones-vertical-card">
+              <div className="soluciones-card-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z" />
+                </svg>
+              </div>
+              <h3>Gestión Ambiental</h3>
+              <p>
+                Nuestro modelo contribuye a reducir la carga contaminante generada por los materiales grasos sobre los sistemas de tratamiento de aguas residuales (PTAR), favoreciendo una operación más eficiente y apoyando los objetivos ambientales de nuestros aliados.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="soluciones-vertical-card">
+              <div className="soluciones-card-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                </svg>
+              </div>
+              <h3>Acompañamiento Especializado</h3>
+              <p>
+                Brindamos acompañamiento técnico y comercial durante todo el proceso de implementación de nuestras soluciones, trabajando de la mano con cada cliente para adaptar nuestro modelo a las necesidades operativas de su empresa y garantizar una gestión eficiente de los materiales grasos.
+              </p>
             </div>
           </div>
         </div>

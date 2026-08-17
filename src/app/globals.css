@@ -4473,3 +4473,139 @@ a {
     width: auto !important;
   }
 }
+
+
+/* =========================================================================
+   ENLARGED DESKTOP HERO TITLE & SOLUCIONES PAGE SUBTITLE
+   ========================================================================= */
+@media (min-width: 993px) {
+  .hero-title-main {
+    font-size: 4.25rem !important; /* Significantly larger, punchy header on desktop */
+    line-height: 1.15 !important;
+    max-width: 1100px !important;
+    text-align: left !important;
+  }
+}
+
+.soluciones-hero-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 1.6rem !important; /* Larger subtitle */
+  font-weight: 600 !important;
+  color: var(--color-orange-primary) !important; /* Accent brand orange */
+  text-align: center;
+  margin-top: 1.25rem !important;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================================================================
+   PORTRAIT VERTICAL CARDS - SOLUCIONES PAGE
+   ========================================================================= */
+.soluciones-servicios-vertical-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.soluciones-vertical-card {
+  background-color: #f8fafc;
+  border: 1px solid var(--color-divider);
+  border-radius: 16px;
+  padding: 3rem 2.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+/* Hover inversion effect to brand's dark blue */
+.soluciones-vertical-card:hover {
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 34, 68, 0.22);
+}
+
+/* Icon Container */
+.soluciones-card-icon-wrapper {
+  background-color: rgba(242, 169, 0, 0.12);
+  color: var(--color-orange-primary);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.25rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(242, 169, 0, 0.2);
+}
+
+/* Icon Hover State (changes to brand's orange with black icon) */
+.soluciones-vertical-card:hover .soluciones-card-icon-wrapper {
+  background-color: var(--color-orange-primary);
+  color: #000000;
+  border-color: transparent;
+  transform: scale(1.12) rotate(6deg);
+  box-shadow: 0 0 20px rgba(242, 169, 0, 0.45);
+}
+
+/* Title Styling */
+.soluciones-vertical-card h3 {
+  font-size: 1.35rem;
+  color: var(--color-blue-dark);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  line-height: 1.35;
+}
+
+.soluciones-vertical-card:hover h3 {
+  color: var(--color-white);
+}
+
+/* Paragraph Styling */
+.soluciones-vertical-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-medium);
+  line-height: 1.65;
+  font-family: var(--font-secondary);
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.soluciones-vertical-card:hover p {
+  color: #cbd5e1;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .soluciones-intro-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .soluciones-intro-img-col {
+    height: 250px !important;
+  }
+  .soluciones-servicios-vertical-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-top: 2rem !important;
+  }
+  .soluciones-vertical-card {
+    padding: 2.5rem 1.75rem !important;
+  }
+  .soluciones-hero-subtitle {
+    font-size: 1.3rem !important;
+  }
+}
