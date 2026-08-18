@@ -87,7 +87,7 @@ export default function Oleoquimica() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/circular-leaf-bg.jpg" 
+                  src="/images/circular-leaf-bg.webp" 
                   alt="Palma de aceite" 
                   fill
                 />
@@ -121,7 +121,7 @@ export default function Oleoquimica() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/waste-oil.jpg" 
+                  src="/images/waste-oil.webp" 
                   alt="Granos de soya" 
                   fill
                 />

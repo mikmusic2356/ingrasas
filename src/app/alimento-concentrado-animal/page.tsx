@@ -53,7 +53,7 @@ export default function AlimentoConcentradoAnimal() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/nutricion-animal-card.jpg" 
+                  src="/images/aceite de poll.jpeg" 
                   alt="Aceite de pollo" 
                   fill
                 />
@@ -87,7 +87,7 @@ export default function AlimentoConcentradoAnimal() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/waste-oil.jpg" 
+                  src="/images/nutricion-animal-card.webp" 
                   alt="Harina avícola" 
                   fill
                 />
