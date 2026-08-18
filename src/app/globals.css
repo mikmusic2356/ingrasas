@@ -4429,8 +4429,7 @@ a {
   }
 
   .hero-bottom-features {
-    padding: 2rem 0 !important;
-    margin-top: 1rem !important;
+    display: none !important;
   }
 }
 
