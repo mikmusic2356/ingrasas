@@ -2328,6 +2328,7 @@ a {
 /* Hero Bottom features grid overlay */
 /* Hero Bottom features grid overlay */
 .hero-bottom-features {
+  display: none !important; /* Ocultar en escritorio */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3753,6 +3754,7 @@ a {
   }
 
   .hero-bottom-features {
+    display: block !important; /* Mostrar en dispositivos móviles */
     position: relative;
     border-top: none;
     padding: 2rem 0;

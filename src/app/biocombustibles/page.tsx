@@ -53,13 +53,13 @@ export default function Biocombustibles() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/waste-oil.jpg" 
-                  alt="Tratamiento de aceites" 
+                  src="/images/aceite de poll.jpeg" 
+                  alt="Aceite de pollo" 
                   fill
                 />
               </div>
               <div className="product-card-content-col">
-                <h3 className="product-title-sub">ACEITE DE POLLO INDUSTRIAL (BAJO FÓSFORO)</h3>
+                <h3 className="product-title-sub">ACEITE DE POLLO</h3>
                 
                 <div className="product-detail-item">
                   <h4>Descripción</h4>
@@ -87,8 +87,8 @@ export default function Biocombustibles() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/hero-bg.jpg" 
-                  alt="Planta de procesamiento" 
+                  src="/images/cebo de res 2.jpeg" 
+                  alt="Sebo industrial" 
                   fill
                 />
               </div>

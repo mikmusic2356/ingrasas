@@ -53,7 +53,7 @@ export default function Jaboneria() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/hero-bg.jpg" 
+                  src="/images/cebo de res 2.jpeg" 
                   alt="Sebo saponificable" 
                   fill
                 />
@@ -87,7 +87,7 @@ export default function Jaboneria() {
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/circular-economy.jpg" 
+                  src="/images/glicerina.jpeg" 
                   alt="Glicerina pura" 
                   fill
                 />

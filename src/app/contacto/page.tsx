@@ -5,15 +5,6 @@ export default function Contacto() {
     <main>
       <div className="page-header-spacer"></div>
       <section className="page-hero">
-        <Image 
-          src="/images/hero-bg.jpg" 
-          alt="Contacto Banner" 
-          fill
-          priority
-          className="hero-bg"
-          style={{ opacity: 0.2 }}
-        />
-        <div className="hero-overlay"></div>
         <div className="container" style={{ position: "relative", zIndex: 10 }}>
           <h1 className="page-title">Contacto</h1>
           <p className="hero-desc" style={{ margin: "0 auto", textAlign: "center" }}>

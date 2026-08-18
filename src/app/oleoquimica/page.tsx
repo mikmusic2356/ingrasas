@@ -49,21 +49,21 @@ export default function Oleoquimica() {
           <h2 className="products-section-title">MATERIAS PRIMAS</h2>
           
           <div className="products-list-grid">
-            {/* Product 1: Glicerina Cruda */}
+            {/* Product 1: Glicerina */}
             <div className="product-card-horizontal">
               <div className="product-card-image-col">
                 <Image 
-                  src="/images/hero-bg.jpg" 
-                  alt="Operario industrial" 
+                  src="/images/glicerina.jpeg" 
+                  alt="Glicerina" 
                   fill
                 />
               </div>
               <div className="product-card-content-col">
-                <h3 className="product-title-sub">GLICERINA CRUDA</h3>
+                <h3 className="product-title-sub">GLICERINA</h3>
                 
                 <div className="product-detail-item">
                   <h4>Descripción</h4>
-                  <p>La glicerina cruda seca es un subproducto de origen industrial obtenido principalmente en la producción de biodiésel. Se presenta como un líquido viscoso de color marrón oscuro, con alto contenido de glicerol y baja humedad, acompañado de impurezas como sales, materia orgánica y trazas de catalizadores.</p>
+                  <p>La glicerina cruda seca es un subproducto de origen industrial obtenido principalmente en la producción de biodiésel. Se presenta como un líquido viscoso de color marrón oscuro, con alto contenido de glicerol and baja humedad, acompañado de impurezas como sales, materia orgánica y trazas de catalizadores.</p>
                 </div>
 
                 <div className="product-detail-item">
@@ -74,40 +74,6 @@ export default function Oleoquimica() {
                 <div className="product-detail-item">
                   <h4>Aplicación</h4>
                   <p>Se utiliza como materia prima en la industria oleoquímica para la producción de glicerina refinada, así como en la fabricación de resinas, anticongelantes, productos químicos y como insumo energético en procesos industriales.</p>
-                </div>
-
-                <div className="product-detail-item">
-                  <h4>Especificaciones</h4>
-                  <p>De acuerdo a la negociación.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Product 2: Glicerina Técnica */}
-            <div className="product-card-horizontal">
-              <div className="product-card-image-col">
-                <Image 
-                  src="/images/circular-economy.jpg" 
-                  alt="Purificación de Glicerina" 
-                  fill
-                />
-              </div>
-              <div className="product-card-content-col">
-                <h3 className="product-title-sub">GLICERINA TECNICA</h3>
-                
-                <div className="product-detail-item">
-                  <h4>Descripción</h4>
-                  <p>La glicerina técnica es una sustancia química líquida, incolora, viscosa y altamente higroscópica, cuyo nombre químico es glicerol o 1,2,3-propanotriol (C3H8O3). Se caracteriza por su capacidad para atraer y retener agua, su bajo punto de volatilidad y su estabilidad química, lo que la convierte en un intermediario y materia prima versátil en procesos industriales donde no se requiere la pureza de grado farmacéutico o alimentario.</p>
-                </div>
-
-                <div className="product-detail-item">
-                  <h4>Fabricación</h4>
-                  <p>Se obtiene a partir de la purificación de glicerina cruda, generalmente proveniente de la producción de biodiésel o de procesos de saponificación, mediante etapas de neutralización, filtración, destilación y ajuste de pureza para cumplir con especificaciones técnicas.</p>
-                </div>
-
-                <div className="product-detail-item">
-                  <h4>Aplicación</h4>
-                  <p>Biocombustibles de segunda generación, jabonería y aplicación industrial.</p>
                 </div>
 
                 <div className="product-detail-item">

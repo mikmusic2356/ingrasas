@@ -166,7 +166,7 @@ export default function Nosotros() {
           <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
             <div style={{ position: "relative", width: "100%", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--color-divider)", backgroundColor: "#f7fafc" }}>
               <Image 
-                src="/images/quienes_somos_imagen.jpeg" 
+                src="/images/rendering animal.jpeg" 
                 alt="Procesamiento industrial Ingrasas" 
                 width={600}
                 height={600}
