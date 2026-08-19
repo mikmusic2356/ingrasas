@@ -182,8 +182,8 @@ export default function ContactModal() {
                 });
                 setIsSubmitting(false);
 
-                if (!saved) {
-                  alert("Error al registrar la solicitud. Verifique su conexión.");
+                if (!saved || !saved.success) {
+                  alert(`Error al registrar la solicitud: ${saved?.error || "Verifique su conexión"}`);
                   return;
                 }
 
@@ -199,7 +199,7 @@ export default function ContactModal() {
                   `• *Mensaje:* ${mensajeVal || "Sin mensaje adicional"}`;
 
                 const encoded = encodeURIComponent(text);
-                window.open(`https://wa.me/573135100495?text=${encoded}`, "_blank");
+                window.open(`https://wa.me/+573135100495?text=${encoded}`, "_blank");
                 handleClose();
               }}
             >

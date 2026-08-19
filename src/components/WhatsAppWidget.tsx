@@ -20,7 +20,7 @@ export default function WhatsAppWidget() {
     }
 
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/573135100495?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/+573135100495?text=${encoded}`, "_blank");
     setIsOpen(false);
   };
 
@@ -95,7 +95,7 @@ export default function WhatsAppWidget() {
           {/* Footer */}
           <div className="wa-popover-footer">
             <a 
-              href="https://wa.me/573135100495" 
+              href="https://wa.me/+573135100495" 
               target="_blank" 
               rel="noopener noreferrer"
               className="wa-popover-footer-link"
