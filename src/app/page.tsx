@@ -442,7 +442,7 @@ export default function Home() {
               </div>
 
               <div className="details-actions">
-                <a href="/docs/Politica-integral-INGRASAS-2026.pdf" download className="btn-spec-outline">
+                <a href="#contacto" onClick={() => setSelectedTab("ficha")} className="btn-spec-outline">
                   Solicitar ficha técnica
                 </a>
                 <button 
