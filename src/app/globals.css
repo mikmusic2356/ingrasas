@@ -2251,22 +2251,28 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-content-main {
-  max-width: 780px;
-  text-align: left;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title-main {
   font-size: 3.25rem;
-  color: #ffffff;
+  color: #f2a900;
   font-family: var(--font-primary);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
+  text-align: center;
 }
 
 .hero-subtitle-main {
@@ -2275,13 +2281,15 @@ a {
   color: #cbd5e1;
   line-height: 1.7;
   margin-bottom: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
+  max-width: 950px;
 }
 
 .hero-actions-row {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-hero-solid {
@@ -4484,7 +4492,7 @@ a {
     font-size: 4.25rem !important; /* Significantly larger, punchy header on desktop */
     line-height: 1.15 !important;
     max-width: 1100px !important;
-    text-align: left !important;
+    text-align: center !important;
   }
 }
 

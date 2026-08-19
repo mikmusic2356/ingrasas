@@ -150,113 +150,7 @@ export default function Home() {
       </section>
 
       {/* =========================================================================
-          02 DEL ORIGEN A LA INDUSTRIA
-          ========================================================================= */}
-      <section className="section-origen-industria">
-        <div className="container">
-          <div className="section-header-centered">
-            <span className="badge-pill">Proceso</span>
-            <h2 className="title-large">DEL ORIGEN A LA INDUSTRIA</h2>
-          </div>
-
-          <div className="flow-process-container">
-            {/* Step 1 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
-                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" />
-                </svg>
-              </div>
-              <span className="flow-step-num">01</span>
-              <h4>ORIGEN</h4>
-              <p>Materiales grasos de origen animal</p>
-            </div>
-            
-            <div className="flow-arrow">&rarr;</div>
-
-            {/* Step 2 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
-                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
-                  <circle cx="5.5" cy="18.5" r="2.5" />
-                  <circle cx="18.5" cy="18.5" r="2.5" />
-                </svg>
-              </div>
-              <span className="flow-step-num">02</span>
-              <h4>RECUPERACIÓN</h4>
-              <p>Recolectamos y recuperamos</p>
-            </div>
-
-            <div className="flow-arrow">&rarr;</div>
-
-            {/* Step 3 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="3" />
-                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                </svg>
-              </div>
-              <span className="flow-step-num">03</span>
-              <h4>GESTIÓN</h4>
-              <p>Gestionamos de forma segura y responsable</p>
-            </div>
-
-            <div className="flow-arrow">&rarr;</div>
-
-            {/* Step 4 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z" />
-                </svg>
-              </div>
-              <span className="flow-step-num">04</span>
-              <h4>VALORIZACIÓN</h4>
-              <p>Transformamos con procesos especializados</p>
-            </div>
-
-            <div className="flow-arrow">&rarr;</div>
-
-            {/* Step 5 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                  <line x1="12" y1="22.08" x2="12" y2="12" />
-                </svg>
-              </div>
-              <span className="flow-step-num">05</span>
-              <h4>MATERIA PRIMA</h4>
-              <p>Materias primas con calidad y trazabilidad</p>
-            </div>
-
-            <div className="flow-arrow">&rarr;</div>
-
-            {/* Step 6 */}
-            <div className="flow-step">
-              <div className="flow-step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-                  <line x1="6" y1="10" x2="6" y2="14" />
-                  <line x1="18" y1="10" x2="18" y2="14" />
-                </svg>
-              </div>
-              <span className="flow-step-num">06</span>
-              <h4>INDUSTRIA</h4>
-              <p>Aplicaciones en diferentes sectores industriales</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================================
-          03 QUÉ HACEMOS
+          02 QUÉ HACEMOS
           ========================================================================= */}
       <section className="section-que-hacemos">
         <div className="container">
@@ -331,6 +225,112 @@ export default function Home() {
               <div className="hacemos-card-body">
                 <p>Proveemos materias primas de origen animal para diferentes aplicaciones industriales.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          03 DEL ORIGEN A LA INDUSTRIA
+          ========================================================================= */}
+      <section className="section-origen-industria">
+        <div className="container">
+          <div className="section-header-centered">
+            <span className="badge-pill">Proceso</span>
+            <h2 className="title-large">DEL ORIGEN A LA INDUSTRIA</h2>
+          </div>
+
+          <div className="flow-process-container">
+            {/* Step 1 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                  <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" />
+                </svg>
+              </div>
+              <span className="flow-step-num">01</span>
+              <h4>ORIGEN</h4>
+              <p>Materiales grasos de origen animal</p>
+            </div>
+            
+            <div className="flow-arrow">&rarr;</div>
+
+            {/* Step 2 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+              </div>
+              <span className="flow-step-num">02</span>
+              <h4>RECUPERACIÓN</h4>
+              <p>Recolectamos and recuperamos</p>
+            </div>
+
+            <div className="flow-arrow">&rarr;</div>
+
+            {/* Step 3 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+              </div>
+              <span className="flow-step-num">03</span>
+              <h4>GESTIÓN</h4>
+              <p>Gestionamos de forma segura y responsable</p>
+            </div>
+
+            <div className="flow-arrow">&rarr;</div>
+
+            {/* Step 4 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z" />
+                </svg>
+              </div>
+              <span className="flow-step-num">04</span>
+              <h4>VALORIZACIÓN</h4>
+              <p>Transformamos con procesos especializados</p>
+            </div>
+
+            <div className="flow-arrow">&rarr;</div>
+
+            {/* Step 5 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                  <line x1="12" y1="22.08" x2="12" y2="12" />
+                </svg>
+              </div>
+              <span className="flow-step-num">05</span>
+              <h4>MATERIA PRIMA</h4>
+              <p>Materias primas con calidad y trazabilidad</p>
+            </div>
+
+            <div className="flow-arrow">&rarr;</div>
+
+            {/* Step 6 */}
+            <div className="flow-step">
+              <div className="flow-step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                  <line x1="6" y1="10" x2="6" y2="14" />
+                  <line x1="18" y1="10" x2="18" y2="14" />
+                </svg>
+              </div>
+              <span className="flow-step-num">06</span>
+              <h4>INDUSTRIA</h4>
+              <p>Aplicaciones en diferentes sectores industriales</p>
             </div>
           </div>
         </div>
@@ -468,7 +468,25 @@ export default function Home() {
           </div>
 
           <div className="aplicaciones-industriales-grid-new" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "2rem" }}>
-            {/* Card 1: Biocombustibles */}
+            {/* Card 1: Alimentación Animal */}
+            <Link href="/alimento-concentrado-animal" className="home-industry-card" style={{ height: "450px", textDecoration: "none" }}>
+              <Image 
+                src="/images/Farm_animals_representing_nutrition_202608032308.jpeg" 
+                alt="Alimentación Animal" 
+                fill
+                className="card-bg-image"
+              />
+              <div className="card-overlay"></div>
+              <div className="card-content">
+                <h2 className="card-title">ALIMENTACIÓN ANIMAL</h2>
+                <p className="card-desc">Materias primas para nutrición y producción de concentrados.</p>
+                <div className="card-link">
+                  MÁS SOBRE ALIMENTACIÓN ANIMAL &rarr;
+                </div>
+              </div>
+            </Link>
+
+            {/* Card 2: Biocombustibles */}
             <Link href="/biocombustibles" className="home-industry-card" style={{ height: "450px", textDecoration: "none" }}>
               <Image 
                 src="/images/bioetanol-biocombustiblesjpg.webp" 
@@ -486,7 +504,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Card 2: Oleoquímica */}
+            {/* Card 3: Oleoquímica */}
             <Link href="/oleoquimica" className="home-industry-card" style={{ height: "450px", textDecoration: "none" }}>
               <Image 
                 src="/images/processes-liquids-oleochemicals-hero.webp" 
@@ -504,7 +522,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Card 3: Jabonería */}
+            {/* Card 4: Jabonería */}
             <Link href="/jaboneria" className="home-industry-card" style={{ height: "450px", textDecoration: "none" }}>
               <Image 
                 src="/images/jaboneria.jpg" 
@@ -518,24 +536,6 @@ export default function Home() {
                 <p className="card-desc">Componentes para la fabricación de jabones y detergentes.</p>
                 <div className="card-link">
                   MÁS SOBRE JABONERÍA &rarr;
-                </div>
-              </div>
-            </Link>
-
-            {/* Card 4: Alimentación Animal */}
-            <Link href="/alimento-concentrado-animal" className="home-industry-card" style={{ height: "450px", textDecoration: "none" }}>
-              <Image 
-                src="/images/Farm_animals_representing_nutrition_202608032308.jpeg" 
-                alt="Alimentación Animal" 
-                fill
-                className="card-bg-image"
-              />
-              <div className="card-overlay"></div>
-              <div className="card-content">
-                <h2 className="card-title">ALIMENTACIÓN ANIMAL</h2>
-                <p className="card-desc">Materias primas para nutrición y producción de concentrados.</p>
-                <div className="card-link">
-                  MÁS SOBRE ALIMENTACIÓN ANIMAL &rarr;
                 </div>
               </div>
             </Link>
